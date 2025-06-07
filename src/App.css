@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+/* Remove outer border */
+.rbc-calendar,
+.rbc-month-view,
+.rbc-time-view {
+  border: none;
+  box-shadow: none;
+}
+
+/* Remove borders between rows/columns */
+.rbc-month-row,
+.rbc-day-bg,
+.rbc-date-cell,
+.rbc-time-slot,
+.rbc-timeslot-group,
+.rbc-time-content,
+.rbc-time-gutter,
+.rbc-time-header,
+.rbc-header,
+.rbc-row {
+  border: none !important;
+}
+
+/* Remove borders from events */
+.rbc-event {
+  border: none;
+  box-shadow: none;
+}
+
+/* Optional: remove bottom line on toolbar */
+.rbc-toolbar {
+  border-bottom: none;
+  ;
+}
+/* Center date numbers inside month cells */
+.rbc-date-cell {
+  display: flex;
+  justify-content:center;
+  align-items: flex-center;
+  height: 80%; /* Fill the cell */
+  font-weight: 500;
+  font-size: 14px;
+  padding: 30px;
+  
+}
+.calendar-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Tailwind's shadow-xl */
+}

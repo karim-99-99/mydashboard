@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom {
+  background-color: #eeeeee;
+  min-height: 100vh;
+}
+
+@layer base {
+  body {
+    @apply bg-[#eeeeee];
+  }
+}
