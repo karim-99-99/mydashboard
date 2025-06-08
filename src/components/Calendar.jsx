@@ -385,12 +385,18 @@ const Calendar = () => {
                 format(date, "yyyy-MM-dd") === format(new Date(), "yyyy-MM-dd");
               return {
                 style: {
-                  backgroundColor: "white",
+                  backgroundColor: "",
                   color: "#000000",
                   fontWeight: isToday ? "bold" : "normal",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                  width: "100%",
                 },
               };
             }}
+            className="rbc-calendar"
           />
         </div>
         <div className="h-[600px] border  overflow-hidden rounded-xl bg-[#ffffff] shadow-xl">
